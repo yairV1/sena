@@ -1,0 +1,445 @@
+/* =============================
+   ESTILOS GENERALES
+============================= */
+body {
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s ease;
+}
+
+.header-top,
+.no-gap {
+  padding: 0;
+  margin: 0;
+}
+
+/* =============================
+   NAVBAR SENA
+============================= */
+.navbar-sena {
+  background-color: #6BBE2E;
+}
+
+.navbar-sena .nav-link {
+  color: white !important;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.navbar-sena .nav-link:hover {
+  background-color: #5bae26;
+}
+
+/* =============================
+   ICONOS REDONDOS
+============================= */
+.icono-bolita {
+  width: 70px;
+  height: 70px;
+  background-color: #6BBE2E;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  margin: auto;
+  transition: transform 0.3s;
+}
+
+.icono-bolita:hover {
+  transform: scale(1.1);
+}
+
+.iconos img {
+  width: 80px;
+  height: 80px;
+  background-color: #6BBE2E;
+  border-radius: 50%;
+  padding: 15px;
+  object-fit: contain;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.iconos img:hover {
+  transform: scale(1.1);
+}
+
+.iconos p {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  color: #0060bf;
+}
+
+/* =============================
+   BOTONES SENA
+============================= */
+.btn-sena-group {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  margin-top: 0;
+}
+
+.btn-sena-text,
+.btn-sena-with-arrow {
+  background-color: #6BBE2E;
+  color: white;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-sena-text {
+  flex-grow: 1;
+  border-radius: 5px 0 0 5px;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn-sena-with-arrow {
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.btn-sena-text:hover,
+.btn-sena-with-arrow:hover {
+  background-color: #5aae28;
+  color: white;
+}
+
+.pixel-btn {
+  padding: 15px 30px;
+  background: #6BBE2E;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pixel-btn:hover {
+  background: #5AA826;
+}
+
+/* =============================
+   FORMULARIOS
+============================= */
+.form-control,
+.form-select {
+  background-color: white;
+  color: #333;
+  border-radius: 6px;
+}
+
+.busqueda-form {
+  background-color: #5d5d68;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  max-width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-row select,
+.form-row input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-opciones {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.form-opciones label {
+  font-size: 14px;
+}
+
+.btn-buscar {
+  margin-left: auto;
+  padding: 10px 20px;
+  background-color: #2d8c4e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* =============================
+   TARJETAS / ACCESOS
+============================= */
+.card .bg-success {
+  background-color: #6BBE2E !important;
+}
+
+.access-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: #0d6efd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.access-link:hover {
+  background: #e2e6ea;
+  color: #0a58ca;
+}
+
+/* =============================
+   BARRA SOCIAL FIJA
+============================= */
+.social-bar {
+  position: fixed;
+  top: 30%;
+  right: 0;
+  transform: translateY(-30%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.social-bar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 5px 0 0 5px;
+}
+
+.social-bar a img {
+  width: 28px;
+  height: auto;
+}
+
+.social-bar a:hover {
+  transform: scale(1.1);
+}
+
+.social-bar a:nth-child(2):hover { background-color: #3b5998; }
+.social-bar a:nth-child(3):hover { background-color: #1da1f2; }
+.social-bar a:nth-child(4):hover { background-color: #ff0000; }
+.social-bar a:nth-child(5):hover { background-color: #e1306c; }
+
+@media (max-width: 768px) {
+  .social-bar { display: none; }
+}
+
+/* =============================
+   BOTÓN MODO OSCURO
+============================= */
+.modo-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #6BBE2E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 2000;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.modo-btn:hover {
+  background-color: #5AAE28;
+}
+
+/* =============================
+   MODO OSCURO LED
+============================= */
+body.modo-oscuro {
+  background-color: #0c0c0c;
+  color: #00ffcc;
+}
+
+body.modo-oscuro .navbar-sena {
+  background-color: #0f0f0f;
+  box-shadow: 0 0 10px #6BBE2E;
+}
+
+body.modo-oscuro .nav-link {
+  color: #00ffcc !important;
+}
+
+body.modo-oscuro .nav-link:hover {
+  background-color: #222;
+  text-shadow: 0 0 5px #00ffcc;
+}
+
+body.modo-oscuro .card,
+body.modo-oscuro .bg-light,
+body.modo-oscuro .form-control,
+body.modo-oscuro .form-select,
+body.modo-oscuro .text-dark,
+body.modo-oscuro .btn,
+body.modo-oscuro .border,
+body.modo-oscuro .bg-secondary {
+  background-color: #111 !important;
+  color: #00ffcc !important;
+  border-color: #00ffcc !important;
+  box-shadow: 0 0 8px #00ffcc33;
+}
+
+body.modo-oscuro .btn-success,
+body.modo-oscuro .pixel-btn {
+  background-color: #00ffcc !important;
+  color: #000 !important;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+body.modo-oscuro .icono-bolita {
+  background-color: #000;
+  color: #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+body.modo-oscuro h1,
+body.modo-oscuro h5,
+body.modo-oscuro p,
+body.modo-oscuro small,
+body.modo-oscuro label {
+  color: #00ffcc !important;
+  text-shadow: 0 0 5px #00ffcc55;
+}
+
+body.modo-oscuro .carousel-inner {
+  background-color: #111;
+}
+
+body.modo-oscuro .modo-btn {
+  background-color: #00ffcc;
+  color: #000;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+body.modo-oscuro .logo-sena {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 6px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #6BBE2E, 0 0 25px #00ffcc;
+  filter: brightness(1.5) contrast(1.4);
+  transition: all 0.4s ease;
+}
+
+body.modo-oscuro img:not(.logo-sena) {
+  filter: brightness(1.1) contrast(1.2) saturate(1.2);
+  box-shadow: 0 0 10px #00ffcc55;
+}
+
+body.modo-oscuro img.logo-sena {
+  filter: none;
+}.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  display: none;
+  position: relative;
+  width: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item.active {
+  display: block;
+}
+/* Celulares pequeños (menor a 576px) */
+@media (max-width: 575.98px) {
+  #carruselTexto {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .carousel-inner {
+    padding: 1rem;
+  }
+
+  .icono-bolita {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+  }
+
+  h1, h5, p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablets (entre 576px y 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #carruselTexto {
+    max-width: 100%;
+  }
+
+  .icono-bolita {
+    width: 65px;
+    height: 65px;
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  .carousel-inner {
+    padding: 1.5rem;
+  }
+}
+
+/* Laptops pequeños (entre 768px y 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #carruselTexto {
+    max-width: 100%;
+  }
+
+  .carousel-inner {
+    padding: 2rem;
+  }
+
+  .icono-bolita {
+    width: 70px;
+    height: 70px;
+  }
+}

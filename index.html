@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SofíaPlus - SENA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+
+
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+     #btn {
+      padding: 15px 30px;
+      background: #6BBE2E;
+      color: white;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .pixel {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: white;
+      pointer-events: none;
+    }
+    .header-top {
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar-sena {
+      background-color: #6BBE2E;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar-sena .nav-link {
+      color: white !important;
+      font-weight: 500;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    .navbar-sena .nav-link:hover {
+      background-color: #5bae26;
+    }
+
+    @media (max-width: 991px) {
+      .navbar-sena .nav-link {
+        text-align: left;
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    .no-gap {
+      padding: 0;
+      margin: 0;
+    }
+
+    .img-fluid {
+      display: block;
+    }
+
+#carruselTexto {
+  max-width: 600px;
+  margin: auto;
+}
+.carousel-inner {
+  min-height: 200px;    
+}
+  </style>
+
+</head>
+<div class="social-bar">
+  <a href="#"><img src="img/logo.png" alt="SENA" /></a>
+  <a href="https://www.facebook.com/?locale=es_LA"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://x.com/?lang=es"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+  <a href="https://www.youtube.com"><i class="fab fa-instagram"></i></a>
+</div>
+
+<body>
+
+<header class="no-gap">
+  <div class="container-fluid header-top no-gap">
+    <div class="row w-100 align-items-center text-center text-md-start">
+
+      <!-- Logo SENA -->
+      <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start mb-2 mb-md-0">
+        <a href="https://www.sena.edu.co/es-co/Paginas/default.aspx">
+          <img src="img/logo.png" alt="logo" class="img-fluid header-logo">
+        </a>
+      </div>
+
+      <!-- Ministerio del Trabajo -->
+      <div class="col-12 col-md-4 d-flex justify-content-center mb-2 mb-md-0">
+        <img src="img/mintrabajo.png" alt="ministerio" class="img-fluid header-logo">
+      </div>
+
+      <!-- Botones de la derecha -->
+      <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end gap-2">
+        <a href="https://zajuna.sena.edu.co/bilinguismo.php">
+          <img src="img/Boton-Ingles2.png" alt="inglis" class="img-fluid header-logo">
+        </a>
+        <a href="https://ubycuos.online/SENAprototipo/spt/quiz_html5.html">
+          <img src="img/LogSPT-Blanco.png" alt="spt" class="img-fluid header-logo">
+        </a>
+        <a href="https://orientacionvocacional.sena.edu.co/IniciarSesion">
+          <img src="img/vocacional.png" alt="estudio" class="img-fluid header-logo">
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-sena no-gap">
+    <div class="container-fluid justify-content-center no-gap">
+      <ul class="navbar-nav d-flex flex-row justify-content-center gap-4">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html">Buscar oferta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://seleccion.senasofiaplus.edu.co/sofia-evaluacion/evaluaciones.html">Presentar pruebas de selección</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://oferta.senasofiaplus.edu.co/sofia-oferta/certificaciones.html">Certificados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://portal.senasofiaplus.edu.co">Ayuda y soporte</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+  <main>
+    <!-- esta section es solo lo que es el testo y los iconos -->
+    <section class="container my-5">
+         <div class="row align-items-center justify-content-between">
+    
+    <!-- Título a la izquierda -->
+    <div class="col-md-4">
+        <h1 class="text-info fw-bold mb-0 fs-5">
+    Bienvenido a SofíaPlus , el portal de oferta educativa del SENA
+    </h1>
+        </div>
+
+    <!-- Tarjeta a la derecha -->
+    <div class="col-md-8 d-flex justify-content-end">
+      <div class="card flex-row overflow-hidden border-0" style="border-radius: 6px;">
+        
+        <!-- Fecha en verde -->
+        <div class="bg-success text-white d-flex align-items-center justify-content-center px-3" style="min-width: 120px;">
+          <div class="text-center fw-semibold small">
+            20 al 22 de Mayo<br>2025
+          </div>
+        </div>
+
+        <!-- Texto de la convocatoria -->
+        <div class="p-2 d-flex align-items-center bg-light">
+          <div class="text-primary fw-semibold small text-center">
+            Cronograma Convocatoria III 2025<br>Modalidad Presencial y A Distancia
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <hr class="mt-4">
+
+
+<!-- Íconos con texto en bolitas -->
+
+<div class="iconos row justify-content-center text-center g-4">
+
+  <div class="col-auto">
+    <div class="icono-bolita">
+      <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=opcion200&amp;buscador_texto=Ej%3A+Cocina%2C+Contabilidad&amp;ofertaDisponible=on&amp;ffv=-1&amp;amp;ciudad=Ej%3A+Cali%2C+Cartagena&amp;campoEmpresa=&amp;amp;nfct=-1#fix-opcion200">
+      <i class="fas fa-user-graduate"></i>
+    </a>
+    </div>
+    <p>Carreras presenciales</p>
+  </div>
+
+  <div class="col-auto">
+    <div class="icono-bolita">
+      <a href="https://portal.senasofiaplus.edu.co/index.php/component/content/article/2-uncategorised/638-programas-de-formacion-tecnica-virtual">
+      <i class="fas fa-laptop-code"></i>
+    </a>
+    </div>
+    <p>Carreras virtuales</p>
+  </div>
+
+  <div class="col-auto">
+    <div class="icono-bolita">
+      <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=opcion201&buscador_texto=Ej%3A+Cocina%2C+Contabilidad&ofertaDisponible=on&ffv=-1&ciudad=Ej%3A+Cali%2C+Cartagena&campoEmpresa=&nfct=-1">
+      <i class="fas fa-map-marker-alt"></i>
+    </a>
+    </div>
+    <p>Cursos cortos presenciales</p>
+  </div>
+
+  <div class="col-auto">
+    <div class="icono-bolita">
+      <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=opcion201&buscador_texto=Ej%3A+Cocina%2C+Contabilidad&ofertaDisponible=on&ffv=-1&ciudad=Ej%3A+Cali%2C+Cartagena&campoEmpresa=&nfct=-1">
+      <i class="fas fa-laptop"></i>
+    </a>
+    </div>
+    <p>Cursos cortos virtuales</p>
+  </div>
+
+  <div class="col-auto">
+    <div class="icono-bolita">
+      <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=opcion199&buscador_texto=ingles&ofertaDisponible=on&ffv=-1&ciudad=Ej%3A+Cali%2C+Cartagena&campoEmpresa=&nfct=-1">
+      <i class="fas fa-language"></i>
+    </a>
+    </div>
+    <p>Cursos de inglés</p>
+  </div>
+
+</div>
+
+
+    </section>
+
+    <!--en esta son las tablas y los registors  -->
+    <section class="container my-5">
+  <div class="row">
+    <!-- Formulario de búsqueda -->
+    <div class="col-lg-8">
+      <div class="bg-secondary text-white p-4 rounded">
+        <h5 class="fw-bold">¿Qué le gustaría estudiar?</h5>
+        <div class="row mb-3">
+          <div class="col-md-5">
+            <select class="form-select">
+              <option>Todos los tipos</option>
+              <option>Técnico</option>
+              <option>Tecnólogo</option>
+            </select>
+          </div>
+          <div class="col-md-7">
+            <input type="text" class="form-control" placeholder="Ej: Cocina, Contabilidad">
+          </div>
+        </div>
+
+        <h6 class="fw-bold">¿En dónde le gustaría estudiar?</h6>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Ej: Cali, Cartagena">
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="todosProgramas">
+          <label class="form-check-label" for="todosProgramas">Todos los programas</label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="soloOferta" checked>
+          <label class="form-check-label" for="soloOferta">Solo programas con oferta de formación disponible</label>
+        </div>
+
+        <div class="text-end">
+          <button class="btn btn-success px-4 pixel-btn">Buscar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Registro e ingreso -->
+    <div class="col-lg-4">
+      <!-- Registro -->
+      <div class="card mb-4">
+        <div class="card-body d-flex align-items-center">
+          <div class="me-3">
+            <i class="fas fa-user fa-2x text-secondary"></i>
+          </div>
+          <div>
+            <strong>Regístrese</strong><br>
+            <small>para inscribirse a los programas de formación</small>
+          </div>
+        </div>
+        <div class="btn-sena-group">
+          <a href="registro.html" class="btn-sena-text">Registrarse</a>
+          <a href="registro.html" class="btn-sena-with-arrow">
+            <i class="fas fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Ingreso -->
+      <div class="card">
+        <div class="card-body d-flex align-items-center">
+          <div class="me-3">
+            <i class="fas fa-key fa-2x text-secondary"></i>
+          </div>
+          <div>
+            <strong>Ingrese</strong><br>
+            <small>si ya está registrado</small>
+          </div>
+        </div>
+        <div class="btn-sena-group">
+          <a href="ingreso.html" class="btn-sena-text">Ingresar</a>
+          <a href="ingreso.html" class="btn-sena-with-arrow">
+            <i class="fas fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botones adicionales -->
+  <div class="row mt-4">
+    <div class="col-md-6 mb-2">
+      <a href="#" class="btn btn-info w-100 text-white fw-bold">
+        ¿Necesita una búsqueda más sencilla?
+        <i class="fas fa-arrow-right float-end"></i>
+      </a>
+    </div>
+    <div class="col-md-6 mb-2">
+      <a href="#" class="btn btn-info w-100 text-white fw-bold">¿Olvidó su contraseña?</a>
+    </div>
+  </div>
+</section>
+
+<!-- el carrusel y los link creo que son no se como se llamen o esas cosas -->
+<section class="container my-5">
+  <div class="row g-4">
+
+    <!-- Carrusel de texto -->
+    <div class="col-md-4">
+      <div id="carruselTexto" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner bg-light p-4 rounded shadow carrusel-altura-fija w-100">
+
+          <div class="carousel-item active">
+            <h5 class="fw-bold">Cursos Virtuales para todos los colombianos.</h5>
+            <p>La formación virtual es una manera de aprendizaje que se acopla al tiempo y necesidad de quien la adelanta. El SENA tiene una oferta educativa de este tipo de capacitación para los colombianos que se encuentran dentro y fuera del país.</p>
+            <a href="#" class="btn btn-warning w-100 fw-bold">Ver todas las novedades</a>
+          </div>
+
+          <div class="carousel-item">
+            <h5 class="fw-bold">Top 5 de Programas de Formación Aplicaciones Móvil.</h5>
+            <p>A continuación se listan los programas de formación para el desarrollo de aplicaciones móviles con mayor acogida por parte de los Aspirantes.</p>
+            <a href="#" class="btn btn-warning w-100 fw-bold">Ver todas las novedades</a>
+          </div>
+
+          <div class="carousel-item">
+            <h5 class="fw-bold">Dudas en el uso del aplicativo SOFIA Plus?</h5>
+            <p>Consulte la sección de Preguntas Frecuentes para dar claridad a los procesos más comunes dentro del aplicativo.</p>
+            <a href="#" class="btn btn-warning w-100 fw-bold">Ver todas las novedades</a>
+          </div>
+
+          <div class="carousel-item">
+            <h5 class="fw-bold">Cómo crear contraseñas de acceso.</h5>
+            <p>Tenga en cuenta las siguientes recomendaciones para crear su contraseña de acceso en SOFIA Plus.</p>
+            <a href="#" class="btn btn-warning w-100 fw-bold">Ver todas las novedades</a>
+          </div>
+
+          <div class="carousel-item">
+            <h5 class="fw-bold">Recomendaciones de seguridad en SOFIA Plus.</h5>
+            <p>Navegue tranquilo en la Web siguiendo las buenas prácticas de Seguridad.</p>
+            <a href="#" class="btn btn-warning w-100 fw-bold">Ver todas las novedades</a>
+          </div>
+
+          <div class="carousel-item">
+            <h5 class="fw-bold">Atención especial a personas con discapacidad</h5>
+            <p>Se indica la estrategia implementada para brindar apoyo y educación a aspirantes en condición de discapacidad.</p>
+            <a href="#" class="btn btn-warning w-100 fw-bold">Ver todas las novedades</a>
+          </div>
+
+        </div>
+
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselTexto" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselTexto" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-2"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Imagen bloqueada (solo ejemplo de espacio) -->
+    <div class="col-md-3 d-flex align-items-center justify-content-center">
+      <!-- no se porque no carga -->
+    </div>
+
+    <!-- Accesos rápidos -->
+    <div class="col-md-4 d-flex flex-column gap-3">
+      <a href="#" class="d-flex justify-content-between align-items-center bg-light border rounded p-3 text-decoration-none text-dark shadow-sm acceso-card">
+        <span class="text-primary">Verifique si está inscrito en un programa de formación</span>
+        <div class="bg-info text-white rounded-end px-3 py-2">&rsaquo;</div>
+      </a>
+      <a href="#" class="d-flex justify-content-between align-items-center bg-light border rounded p-3 text-decoration-none text-dark shadow-sm acceso-card">
+        <span class="text-primary">Fechas importantes</span>
+        <div class="bg-info text-white rounded-end px-3 py-2">&rsaquo;</div>
+      </a>
+      <a href="#" class="d-flex justify-content-between align-items-center bg-light border rounded p-3 text-decoration-none text-dark shadow-sm acceso-card">
+        <span class="text-primary">Guía de inscripción</span>
+        <div class="bg-info text-white rounded-end px-3 py-2">&rsaquo;</div>
+      </a>
+      <a href="#" class="d-flex justify-content-between align-items-center bg-light border rounded p-3 text-decoration-none text-dark shadow-sm acceso-card">
+        <span class="text-primary">Apoyos de sostenimiento</span>
+        <div class="bg-info text-white rounded-end px-3 py-2">&rsaquo;</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Barra inferior CTA -->
+  <div class="mt-5 bg-secondary text-white d-flex justify-content-between align-items-center p-3 rounded shadow">
+    <span class="fw-semibold">&iquest;Necesita más información o tiene preguntas sobre estudiar en el SENA?</span>
+    <a href="https://portal.senasofiaplus.edu.co/index.php/ayudas/preguntas-frecuentes" class="btn btn-success fw-bold px-4">Resuelva sus dudas aquí</a>
+  </div>
+</section>
+
+
+<button id="modo-oscuro-btn" class="modo-btn">
+  <i class="fas fa-moon"></i>
+</button>
+
+  </main>
+<!-- lo final ajajajaj -->
+  <footer class=" py-3 border-top">
+  <div class="container">
+    <div class="row align-items-center text-center text-md-start">
+      
+      <!-- Información de contacto -->
+      <div class="col-md-6 mb-3 mb-md-0">
+        <p class="fw-semibold mb-1">¿Necesita más información?</p>
+        <p class="mb-0">
+          <i class="fas fa-phone-alt me-2"></i>
+          Bogotá: <span class="fw-semibold">3430111</span><br>
+          Resto del país: <span class="fw-semibold">018000910270</span>
+        </p>
+      </div>
+
+      <!-- Horario y derechos -->
+      <div class="col-md-6 text-md-end">
+        <p class="mb-1">
+          <strong>Horario de atención:</strong> Lunes a Viernes 7:00 am a 7:00 pm - Sábados 8:00 am a 1:00 pm
+        </p>
+        <p class="mb-0">Todos los derechos reservados - 2006 / 2014</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+<script>
+  const btnModo = document.getElementById('modo-oscuro-btn');
+  const icono = btnModo.querySelector('i');
+
+  btnModo.addEventListener('click', () => {
+    document.body.classList.toggle('modo-oscuro');
+    if (document.body.classList.contains('modo-oscuro')) {
+      icono.classList.remove('fa-moon');
+      icono.classList.add('fa-sun');
+    } else {
+      icono.classList.remove('fa-sun');
+      icono.classList.add('fa-moon');
+    }
+  });
+</script>
+
+
+</body>
+</html>
